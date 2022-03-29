@@ -23,7 +23,7 @@ ${usedPrefix + command} latinkesunda selamat pagi
         case 'latinkebugis':
         case 'bugiskelatin':
             let text = args.slice(1).join(' ')
-            let res = await fetch(global.API('xteam', '/aksara/' + args[0].toLowerCase(), { text }, 'APIKEY'))
+            let res = await fetch(global.API('xteam', '/aksara/' + args[0].toLowerCase(), { text }, 'cristian9407'))
             if (!res.ok) throw eror
             let json = await res.json()
             if (!json.status) throw json
